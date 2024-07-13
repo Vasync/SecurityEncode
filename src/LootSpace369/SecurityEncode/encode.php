@@ -14,8 +14,15 @@ function arrayRep(array $array) {
 }
 
 class encode {
+
+  public $handle;
+
+  public function __construct(string|array $needHandle): void {
+    $this->handle = $needHandle;
+  }
   
-  public function __construct(string|array $needHandle): string {
+  public function run(): string {
+    $needHandle = $this->handle;
     if(is_array($needHandle))arrayRep($needHandle);
     $alphas = array_merge(range('A', 'Z'), range('a', 'z'));
     $len = strlen($needHandle);
