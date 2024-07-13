@@ -9,10 +9,10 @@ use LootSpace369\SecurityEncode\encode;
 Array encoding by:
 ```php
 $array = ["a","b"];
-$encode = new encode($array);
+$encode = new encode($array)->run();
 ```
 String encoding by:
 ```php
 $str = "LootSpace369";
-$encode = new encode($str);
+$encode = new encode($str)->run();
 ```
