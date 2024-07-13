@@ -17,7 +17,7 @@ class encode {
 
   public $handle;
 
-  public function __construct(string|array $needHandle): void {
+  public function __construct(string|array $needHandle) {
     $this->handle = $needHandle;
   }
   
