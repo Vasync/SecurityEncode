@@ -2,5 +2,9 @@
 build-by-default: true
 branches:
 - main
-projects: []
+projects:
+  SecurityEncode:
+    path: ""
+    model: virion
+    type: library
 ...
